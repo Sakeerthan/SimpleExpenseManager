@@ -34,6 +34,10 @@ public class  InMemoryDemoExpenseManager extends ExpenseManager {
         setup(context);
     }
 
+    public InMemoryDemoExpenseManager() {
+
+    }
+
     @Override
     public void setup(Context context) {
         /*** Begin generating dummy data for In-Memory implementation ***/
