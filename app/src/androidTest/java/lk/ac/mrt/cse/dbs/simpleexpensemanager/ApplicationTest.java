@@ -47,9 +47,8 @@ public class ApplicationTest  {
 
     @Test
     public void testAddAccount(){
-        testExpenceManager.addAccount("8002999", "Commercial Bank", "Sakeerthan", 1040.0);
-        assertTrue(testExpenceManager.getAccountNumbersList().contains("8002999"));
-
+        testExpenceManager.addAccount("00190541", "BOC", "Sakeerthan", 50000.0);
+        assertTrue(testExpenceManager.getAccountNumbersList().contains("00190541"));
     }
 
 
@@ -60,7 +59,6 @@ public class ApplicationTest  {
             testExpenceManager.updateAccountBalance("12345A",10, 5, 2022, ExpenseType.EXPENSE, "500");
             assertEquals(testExpenceManager.getTransactionLogs().size() , sizeOfLogsArr + 1);
         }catch (InvalidAccountException | ParseException e){
-
         }
 
     }
